@@ -1,0 +1,48 @@
+public class Comments_Literals
+{
+public static void main(String args[]) 
+{
+// --> SingleLinecommand
+
+/* multi
+   line
+   command
+*/
+
+// Literals
+
+int    n = 900;     // numerical literal
+char   n2 = 'a';   //character literal
+String n3 = "ABC"; //String literal
+
+//Escape sequence 
+
+System.out.print("Hello\nWorld"); // --> (\n) 
+System.out.print("\"HelloWorld"\");  
+
+//*****************************
+
+int binary = 0b1000;
+System.out.print("Binary "+binary);
+
+int hexa = 0xA;
+System.out.print("hexa "+hexa);
+
+int octal = 010;
+System.out.print("octal "+octal);
+
+//*****************************
+
+//Type casting 
+
+byte data1 = 127;
+int  data2 = data1;
+
+System.out.print(data2); //Automatic type conversion , This method will not prefered
+
+short a = 20_000; //In java we can use "_" & "$" for alternative of comma's.
+byte  b = (byte)a; //Explicit type conversion
+
+
+}
+}
