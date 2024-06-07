@@ -98,6 +98,7 @@ System.out.println((data<10) && (data!=6));
 
 System.out.println((data==10) || (data>=5+4));
 
-
+// as per java function postfix , prefix , division and mulitipication has higher priority then only add,sub takes place.
+// we can explicit using parenthesis () , allover this is called operator precedence.
 }
 }//ENDS
