@@ -1,0 +1,103 @@
+package operations.java;
+
+// operators in java
+
+public class operators {
+public static void main (String args[]) {
+
+// Arithmatic Operators [ + , - , * , / , % ]
+	
+int n1 = 10;
+int n2 = 10;
+
+int n3 = n1+n2; // substitute all these operations and verify them
+    // = is a assingment operator
+System.out.println("Arithmatic");
+n3 = n1%n2; // modules gives remainder value
+
+System.out.println(n3);
+
+++n1;// pre-increment
+System.out.println(n1);
+n1++;// post increment
+System.out.println(n1);
+
+--n1;//pre-decrement
+n1--;//post-decrement
+
+
+/*******************************************************
+ 
+ 
+ Relational Operators --> [ > , >= , < , <= , == , != ]
+   *it gives the answers only in boolean type 
+   *we can campare even with chracters */
+
+System.out.println("Relational");
+
+int dart1 = 10 , dart2 =10;
+
+System.out.println(dart1<=dart2);
+System.out.println(dart1>dart2);
+System.out.println(dart1!=dart2); //-->'!=' means this two must not be in equal
+// maximum we are using this opertors on conditional statements 
+
+//char c = 'a';
+int  n4 = 'a'; //---> we can able to proceed char with help of ASCII.
+System.out.println(n4>= 97);
+
+
+/**********************************************************
+       Bitwise operator
+
+It used to operate patricular bits
+primary types  & (and), |(or) ,^(xor) ,!(not).
+secondary types >> , << , >>>	*/
+System.out.println("Bitwise ");
+
+byte a = 0b1000; //-->8
+byte b = 0b0100; //-->4
+
+System.out.println(a&b); //&--> both must be true
+System.out.println(a|b); //|--> atleast one must be true
+System.out.println(a^b); //Strict version of or is Xor 
+System.out.println(~a);  //provide opposite value '0 means 1 - 1 means 0'
+
+
+System.out.println("Shifting using bitwise");
+//leftshift
+int num1 = 10;
+System.out.println(num1<<1);//used to shift the bits from msb to lsb leftside, moves depends our algorithim  
+// **** the answer always will be "multiply by 2" with the num. ****
+
+
+//rightshift
+int num2 =11;
+System.out.println(num1>>1);//used to shift the bits from msb to lsb rightside, moves depends our algorithim  
+// **** the answer always will be "divided by 2" with the num.
+
+
+//rightshift with zero fill
+int num3 =12;
+System.out.println(num3>>>1);//used to shift the bits from msb to lsb rightside, moves depends our algorithim 
+// **** the empty bit area "will always filled by '0'" ****
+
+
+System.out.println("Short circuit logical operator");
+/*  ***************************************************
+ * Short Circuit logical operator
+ * this operator used to check the values as per (and,or - table)
+ * &&) --> if one false it wont check another one , directly return false .. else it check next value..
+ * ||) --> if one true  it wont check another one , directly return false .. else it check next value.. 
+ */
+
+
+int data = 9;
+// both need to be true.
+System.out.println((data<10) && (data!=6));
+
+System.out.println((data==10) || (data>=5+4));
+
+
+}
+}//ENDS
