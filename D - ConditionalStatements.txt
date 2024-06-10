@@ -1,0 +1,113 @@
+package test;
+import java.util.Scanner;
+public class skillelevator {
+
+public static void main(String[] args) {
+ 
+// Conditional statements
+System.out.println("conditonal statements");
+
+/* 
+ * if , else , else if .  
+ * we can collab all for any number of times thats our perspective
+ * 
+ * Q1. consider a student grade providing based on their mark..
+ */
+
+
+double mark ; //initialize
+
+System.out.println("Enter mark");
+Scanner scanner = new Scanner(System.in); //Getting user Input
+mark = scanner.nextDouble(); // Storing the input
+
+if(mark>=90)
+	System.out.println("\"Good Grade - A\"");
+else if(mark>=80)
+	System.out.println("Grade - B");
+else if(mark>=70)
+	System.out.println("Grade - C");
+else if(mark>=60)
+	System.out.println("Grade - D");
+else
+    System.out.println("Grade - E");
+
+//This particular method used above is called "else if ladder".
+
+
+
+System.out.println("Nested Statements");
+/*  Nested Statements
+ * 
+ * combination of two or more "if and else" statements is called has nested.
+ * Nested statements in Java refer to placing one statement inside another. This is often done with control flow statements like if, while, for, etc.,
+ * or with compound statements (blocks of code enclosed within curly braces {})
+ */
+
+      int x = 10;
+      int y = 14;
+
+       if (x > 5) { // Outer if statement
+            System.out.println("x is greater than 5");
+            
+            
+       if (y > 15)  // Nested if statement
+            System.out.println("y is greater than 15");
+                        
+        else  // Nested else statement
+            System.out.println("y is not greater than 15");
+                   
+            
+                    } 
+        else  // Outer else statement
+            System.out.println("x is not greater than 5");
+               
+    
+/*
+ * In this example, there's an outer if-else statement, and inside the if block, there's a nested if-else statement.
+ * Nested statements help in organizing and controlling the flow of the program based on multiple conditions.
+ */
+       
+
+System.out.println("Switch statements"); 
+/*Switch Statement 
+-> it is a alternative of if else statement , we need to use break to split the case 
+useful to handle integers and characters.
+*/
+
+//printing days of week using switch.
+int day;
+System.out.println("Enter a number to see in day");
+Scanner myscan = new Scanner(System.in);
+day = myscan.nextInt();
+
+switch(day) {
+case 1  :System.out.println("mon"); break;
+case 2  :System.out.println("tue"); break;
+case 3  :System.out.println("Wed"); break;
+case 4  :System.out.println("thu"); break;
+case 5  :System.out.println("fri"); break;
+}//-----> switch ends
+ 
+// finding the char is vowel or constant
+char userchars;
+System.out.println("enter a alphabet to check that it is a vowel or constant");
+Scanner myscan2 = new Scanner(System.in);
+userchars = myscan2.next().charAt(0);
+
+switch(userchars) 
+{
+case 'a' :
+case 'e' : 
+case 'i' :
+case 'o' :
+case 'u' : 
+	      System.out.println("Vowel"); break;
+default  :System.out.println("constant");
+
+}//switchends
+
+//By Trying Different Combination we can get new idea and there are more hidden features available by trying new way we can get logical idea
+//And java allows conditional operators to perform
+}
+}//End
