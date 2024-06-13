@@ -1,0 +1,73 @@
+package basicsofarray;
+
+import java.util.Scanner;
+public class basicsofarrays {
+
+public static void main(String[] args) {
+//Arrays --> starts form 0 and end with size-1.
+
+                                   /* 1D-> Arrays */
+	
+int n1[];
+n1 = new int[10]; ///  basic memory allocation process
+
+short n2[] = new short[10]; //direct allocation process
+
+byte  n3[] = new byte[] {1,2,3,4}; //Array direct declaration process
+
+//***********************************************************************************************
+
+                          /* 2D-> Arrays  [][] 2Dimensional representation */
+
+short d2a[][];
+d2a = new short[1][3]; //basic memory allocation process
+//                   row|col
+int d2b[][] = new int[3] [3]; //direct memory allocation process
+
+int d2c[][] = new int[][] {
+
+	{1,2,3},
+	{4,5,6},
+	{7,8,9}
+	
+};//Array direct declaration process
+
+
+
+
+//we can access the array via loops concept effectively especially for-each loop
+System.out.println("1D-array");
+//consider a array.
+int arr[] = new int[2];
+arr[0] = 10;
+arr[1] = 20;
+
+for(int i=0; i<arr.length; i++)  //i-variable will play's index role 
+	System.out.println(arr[i]);
+
+//*************************************************************************************
+
+System.out.println("2D-array");
+int[][] d2 = new int[][] {
+    {1,2,3,4}, 
+	{4,5,6,4}
+};
+// for 2 dimension we need to use two pointer to track 
+//                                                          VERY IMPORTANT TIP :   
+int len = d2.length;
+for(int i=0; i<len; i++) { // I controls "rows" so need to give "condition" as per given size.
+for(int j=0; j<=len; j++) {// J controls "cols" .""in this Scenario row is 2.  so the size of the array will be 2. But the coloum here is 3-> which is 0,1,&2
+//                            if we give same size to j we will lose the last J'th value, so we need to change the condition wisely as per situvation. 
+//                            here i give "<=" to go upto last coloum . 
+//                            "Like That Every Scenario Differs"....
+System.out.println(d2[i][j]);
+}
+}
+/*                                                        like (3x3)
+// permanent solution is by provide same length of matrix like (nxn) matrix
+ *   
+   via this we have same length, can cover all value without losing or any trailing error.
+*/
+	}
+
+}//END
