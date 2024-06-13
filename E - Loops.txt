@@ -1,0 +1,147 @@
+package loopsconcept;
+import java.util.Scanner;
+public class javaloopsconcept {
+
+public static void main(String[] args) {
+
+//loop --> java consist 3 loops for,while,do-while all will project same output at the end.
+// gendrally loop used to repeat for n times to get result.
+	
+//For Loop 
+	
+/* syntax :
+ * 
+ * for(initialization; condition; inc++/dec--)
+ * {
+ * 
+ * }
+ */
+
+//Print first n odd  numbers 
+System.out.println("Printing n odd numbers");
+System.out.println("Enter a num :");
+Scanner scanner = new Scanner(System.in); //getting input
+int n =scanner.nextInt(); //scan and store
+
+for(int i=1; i<=n; i++)// i--> stands for iterator
+
+{
+if(i%2==1) System.out.println(i);
+else continue;
+}
+
+//******************************************************************************
+
+
+//While Loop --> alternative loop
+
+/* syntax:
+ * initialization
+ * while(condition)
+ * {
+ *  block of code
+ *  inc++/dec--
+ * }
+ * 
+ */
+
+//finding& printing first n natural numbers
+
+System.out.println("Printing N natural numbers");
+Scanner myscan = new Scanner(System.in);
+int num = myscan.nextInt();
+
+int i=1;
+while(i<=num)
+{
+System.out.println(i);
+i++;
+}
+
+//**********************************************************************************
+
+//Do- while loop --> used to execute the statement atleast once then it will check condition
+/*
+ * do {
+ *  //block of code
+ *  inc++/dec--
+ * }while(condition); ---> "(;)semi colon need to be present"
+ * 
+ * 
+ */
+System.out.println("Do->while");
+
+int count =1;
+do {
+System.out.println(count);
+count++;
+}while(count<=num);
+
+
+//Factorial of n
+System.out.println("Factorial of a given number");
+
+System.out.println("enter a number :");
+Scanner  scan = new Scanner(System.in);
+int fn = scan.nextInt();
+
+int factorial = 1;
+
+//for(int c=1; c<=fn ; c++) {
+//factorial*=c;	
+//}
+
+int c=1;
+do {
+System.out.println(factorial *= c);
+c++;
+} while(c<=fn);
+
+System.out.println("The factorial of "+ fn + " is : "+ factorial);
+
+
+//**********************************************************************************
+
+
+//Nested Loop --> it is a combinaton of two or more loop
+//Star printing 
+System.out.println("patternPrinting");
+System.out.println("enter a number");
+
+Scanner scann = new Scanner(System.in);
+int usern = scann.nextInt();
+for(int counter=1; counter<=usern; counter++) { //outerloop maintains rows
+for(int j=1; j<=usern; j++) { //innerloop maintains coloum
+System.out.print("*");
+}
+System.out.print("\n");
+}
+
+//***************************************************************************************
+System.out.println("For-each Loop");
+//for-each loop 
+// these loop will help you to access array elements easily.
+/*
+ * Syntax:
+ *     type V-name  arrayname
+ * for(int   a   :   arr1)
+ * {
+ * }
+ */
+Scanner user = new Scanner(System.in);
+
+System.out.println("Enter 5 characters");
+
+char[] arr1 = new char[5];
+for(int p=0; p<arr1.length;p++)
+arr1[p]=user.next().charAt(0);
+
+//to access each element
+
+for(char x : arr1) {
+System.out.println(x);	
+}
+
+
+}
+}//END
