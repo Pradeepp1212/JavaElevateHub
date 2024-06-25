@@ -1,0 +1,47 @@
+public class SwapVariables {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 10;
+
+        System.out.println("Before swapping:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+
+        // Swap logic using arithmetic operations
+        a = a + b; // a now becomes 15
+        b = a - b; // b now becomes 5 (original value of a)
+        a = a - b; // a now becomes 10 (original value of b)
+
+        System.out.println("\nAfter swapping:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+    }
+}
+/*
+Method 2: Using Bitwise XOR (^) Operation ... 
+
+XOR --> Strict version of or operator will maintain very strictly that is atleast (one must be true). 
+
+public class SwapVariables {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 10;
+
+        System.out.println("Before swapping:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+
+        // Swap logic using bitwise XOR operation
+        a = a ^ b; // a now becomes 15
+        b = a ^ b; // b now becomes 5 (original value of a)
+        a = a ^ b; // a now becomes 10 (original value of b)
+
+        System.out.println("\nAfter swapping:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+    }
+}
+
+
+
+*/
