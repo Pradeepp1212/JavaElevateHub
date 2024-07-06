@@ -1,0 +1,62 @@
+package oops;
+
+public class Classes_objects { //--> we created class here
+	
+public static void main(String []args) { //--> main method 
+
+//class -> in java each and every things like declaration initialization , "main method" all must be inside of the class.
+//Class is like a template and we can use that template for n. number of times.
+//it contains attributes and methods.
+	
+/*Syntax
+ * 
+ * class classname {
+ *  -- attributes;
+ *  
+ *  -- methods{
+ *   //- block of code.
+ *  }->method ends
+ *  
+ * }->class ends
+ */
+	
+	class newclasscreation{
+		 //eg.. to create class.
+//		returntype  methodname
+		  void      print() {             //METHOD
+			 //block of code
+			System.out.println(this);
+			
+		 }
+		 
+		 }
+ 
+ //OBJECTS
+ 
+/* Objects are the instance of the class.
+ * classes are templates which contains some attributes and methods for that things we can able to create objects for those instance "n" number of times individually.
+ * Objects help to invoke some useful methods created by user.
+ * Without creating any object we cannot any methods gendrally, but we can use "STATIC" keyword to access those methoods without invoking. 
+ */
+	
+	
+ //syntax,               keyword
+ // classname objectname = new classname();
+ newclasscreation obj = new newclasscreation();
+ 
+ //Invoking,--> objectname.; (.) dot to invoke methods
+ obj.print();
+ 
+ 
+ //METHODS
+ /* Method is a special way to do the job quickly, it occurs when we call .. 
+  * If we call it will execute the method and once it see "RETURN" then it returns and go away.
+  * 
+  */
+ //Return types --> void & other all datatypes including reference.
+ 
+ //Void -> going to return null.. and others give same type has result.
+ 
+}
+}//ENDS..
+
